@@ -2,15 +2,14 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
-@font-face {
-  font-family: 'Titillium Web', sans-serif;
-}
 
 body {
   font-family: 'Titillium Web', sans-serif;
+  font-style: ;
   padding: 2rem;
 }
 
+/* Lines between Each element */
 .element {
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
@@ -18,12 +17,33 @@ body {
   border-top-color: black;
 }
 
+img {
+  max-width: 50%;
+}
+
+div{
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 h2 {
-  margin-top: 6rem;
+  font-weight: 700;
+  margin-top: 2rem;
 }
 
 h3 {
-  font-style: italic;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.h3-example{
+  font-weight: 700;
   margin-top: 1rem;
 }
 
@@ -45,6 +65,29 @@ code {
   display: block;
 }
 
+.primary-colour{
+  background-color: rgb(225,0,0);
+}
+.secondary-colour{
+  background-color: rgb(188,0,0);
+}
+.tertiary-colour{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+a{
+  color: rgb(188,0,0);
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+}
+
+input{
+  font-family: 'Titillium Web', sans-serif;
+}
+
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -55,14 +98,48 @@ code {
   display: inline-block;
   padding: 0.5rem;
   color: white;
+  background-color: rgb(0,0,0);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border-radius: 8%;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(225,0,0);
+  color: white;
+}
+
+.submit-button{
+  display: inline-block;
+  padding: 0.5rem;
+  border: 0;
+  color: white;
+  background-color: rgb(225,0,0);
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+  border-radius: 8%;
+}
+.submit-button:hover, .button-nav:focus{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.reset-button{
+   display: inline-block;
+  padding: 0.5rem;
+  border: 0;
+  color: white;
   background-color: rgb(50,50,50);
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
+  border-radius: 8%;
 }
 
-.button-nav:hover, .button-nav:focus {
-  background-color: rgb(200,200,200);
+.reset-button:hover, .reset-button:focus{
+  background-color: rgb(0, 0, 0);
 }
 
 
@@ -70,10 +147,25 @@ code {
 /* 
   TEXT ELEMENTS -------------------
 */
+em{
+  font-style: italic;
+}
 
+strong{
+  font-weight: 700;
+}
+
+.square{
+  height: 2rem;
+  width: 15rem;
+}
 
 
 
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+.mini-img{
+  max-width: 20%;
+}

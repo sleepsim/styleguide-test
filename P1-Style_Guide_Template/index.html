@@ -1,49 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
     <meta charset="utf-8">
     <title>P01 - Style Guide Template</title>
 
-    <!-- Loading Fonts -->
+    <!-- Loading Fonts 
+         Titillium Font Weights
+        -Regular 400
+        -Bold 700
+        -Bold 700 Italic
+    -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+    <!-- CSS sheet -->
     <link href="css/main.css" rel="stylesheet">
 
   </head>
 
+  <!-- BODY TEXT -->
+
   <body>
 
     <header>
-      <h1>P01 - Style Guide</h1>
-      <h1>Company Name - Grand Tix</h1>
+      <h1>P01 - Style Guide - Grand Tix</h1>
 
       <nav>        
         <!-- Add boxes to these -->
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="product_listing.html">Product Listing Template</a>
-        <a href="checkout.html">Checkout Template</a>
-        <a href="#citations">Citations</a>
+        <a class="button-nav" href="#brand_identity">Brand Identity</a>
+        <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
+        <a class="button-nav" href="#text_elements">Text Elements</a>
+        <a class="button-nav" href="#combined_elements">Combined Elements</a>
+        <a class="button-nav" href="product_listing.html">Product Listing Template</a>
+        <a class="button-nav" href="#citations">Citations</a>
       </nav>
 
     </header>
 
-    <section id="brand">
-      <!-- <br> -->
+    <!-- BRAND IDENTITY -->
+    <section id="brand_identity">
+
       <h2>Brand Identity</h2>
-      <p>GrandTix is a ticket selling service specialized in selling tickets for motorsport races. The name comes from the word Grand Prix</p>
-      <h3>Logo</h3>
-      <img src="../Assets/Logo_V3.png">
-      <h3>Font</h3>
-      <p>This is the main font GrandTix uses. The font name is Titllium, TiTitillium Web is an open source font readily available through google</p>
-      <h3>Colour</h3>
-      <p></p>
-      <h3>ASDASDASD</h3>
+      <p>GrandTix is a ticket selling service specialized in selling tickets for motorsport races.</p>
+      <p>Due to the current culture of ticket re-selling, finding tickets at retail price has been getting harder and harder. GrandTix is a service aimed to help users purchase retail priced tickets for Motorsports events with a focus on Formula 1.</p>
+      <p>To help combat re-selling of tickets, GrandTix will limit purchases to one per user and require I.D.s, additionally tickets will not be handed out days before the event.</p>
+
+      <section class="element">
+        <h3>Logo</h3>
+        <img src="../Assets/Logo_V4.png">
+      </section>
+
+      <section class="element">
+        <h3>Font</h3>
+        <p>This is the main font GrandTix uses, Titllium web. Titillium Web is an open source font readily available through google fonts</p>
+        <p><strong>This is the bolded heavy font used for highlighting important info</strong></p>
+        <em>This is what empahiszed text looks like for disclaimers etc.</em>
+      </section>
+   
+      <section class="element">
+        <h3>Colour</h3>
+        <div class="square primary-colour font-heavy">RGB(225,0,0)</div>
+        <p>This is the primary colour</p>
+        <div class="square secondary-colour font-heavy">RGB(188,0,0)</div>
+        <p>This is the secondary colour</p>
+        <div class="square tertiary-colour font-heavy">RGB(255,0,0)</div>
+        <p>This is the tertiary colour</p>
+      </section>
 
     </section>
 
@@ -56,6 +81,8 @@
 
       <section class="element">
         <h3>In-text link</h3>
+        <a href="#interactive_elements">This is an in-text link for the website, it uses the secondary colour of GrandTix<br>
+        The link does not change color when clicked and it changes to black when hovered.</a>
       </section>
 
 
@@ -71,29 +98,43 @@
         <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
+        <a class="button-nav" href="#interactive_elements">Default Button</a>
 
       </section>
 
-
+      <!-- Submit/reset -->
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
+        <form>
+          <input type="submit" class="submit-button">
+          <input type="reset" class="reset-button">
+        </form>
       </section>
 
-
+      <!-- Text input -->
       <section class="element">
         <h3>Text Input Field with Label</h3>
+        <label for="email">Email<br></label>
+        <input type="text" id="email" name="email">
       </section>
 
 
       <section class="element">
         <h3>Radio Button with Label</h3>
+        <label>Packages:</label><br>
+        <input type="radio" id="ga" name="radioexample" value="General Admission">
+        <label for="ga">General Admission</label><br>
+        <input type="radio" id="reserved-seat" name="radioexample" value="Reserved Seating">
+        <label for="reserved-seat">Reserved Seating</label><br>
+        <input type="radio" id="vip" name="radioexample" value="VIP">
+        <label for="VIP">VIP</label>
       </section>
 
 
       <section class="element">
         <h3>Image as a Link</h3>
-        
+        <a href="https://www.google.ca"><img src="../Assets/Logo_V4.png"></a>
+        <p><em>This image links to www.google.ca</em></p>        
       </section>
 
 
@@ -108,14 +149,28 @@
 
       <section class="element">
         <h3>Headings</h3>
+        <p>Four Levels of headings</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
       </section>
 
       <section class="element">
         <h3>Paragraphs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget tempus massa, vitae pellentesque sapien. Nullam quis arcu id magna scelerisque aliquet dapibus quis dolor. Duis non neque maximus, viverra tellus ut, ullamcorper quam. Phasellus at suscipit ipsum. Quisque vel tortor consequat, elementum arcu in, semper eros. Nam egestas tincidunt erat, in eleifend felis suscipit sit amet. Suspendisse nulla neque, sagittis sit amet tempor consequat, imperdiet eu nunc.</p>
+
+        <p>Donec magna tellus, rhoncus id ornare ut, blandit quis tortor. Suspendisse non condimentum ante, in sodales sem. Duis cursus commodo tellus sit amet elementum. Quisque sagittis lectus ut dolor hendrerit tincidunt. Nullam dignissim, nunc quis mattis egestas, orci nulla aliquet erat, id facilisis neque dui ac elit. Aliquam mi mi, vestibulum id sapien sed, fringilla rhoncus erat. Pellentesque blandit erat rutrum mauris interdum sodales. Phasellus sit amet convallis ex. Sed at ligula lacinia, commodo dui in, dapibus leo. Nulla dictum mauris enim, nec sagittis risus placerat id.
+        </p>
       </section>
 
       <section class="element">
         <h3>Numbered Lists</h3>
+        <ol type="I">
+          <li>First Item</li>
+          <li>Second Item</li>
+          <li>Third Item</li>
+        </ol>
       </section>
 
     </section>
@@ -129,18 +184,84 @@
 
       <section class="element">
         <h3>Main Navigation</h3>
+        <p>This is how main Navigation might look like</p>
+        <nav>        
+          <!-- Add boxes to these -->
+          <a class="button-nav" href="#combined_elements">Main</a>
+          <a class="button-nav" href="#combined_elements">Tickets</a>
+          <a class="button-nav" href="#combined_elements">Schedule</a>
+          <a class="button-nav" href="#combined_elements">About Us</a>
+          <a class="button-nav" href="#combined_elements">Contact</a>
+        </nav>
       </section>
 
       <section class="element">
+
         <h3>Product/Service Listing</h3>
+        <h2>Monaco Circuit Tickets</h2>
+        <img src="../Assets/Monaco_Circuit.png"><br>
+        <h3>Choose Location</h3>
+        <input type="radio" id="sec1" name="sector" value="General Admission">
+        <label for="sec1">Sector 1</label>
+        <input type="radio" id="sec2" name="sector" value="General Admission">
+        <label for="sec2">Sector 2</label>
+        <input type="radio" id="sec3" name="sector" value="General Admission">
+        <label for="sec3">Sector 3</label>
+
+        <h3>Choose Ticket Type</h3>
+
+        <input type="radio" id="tic1" name="ticket-type" value="General Admission">
+        <label for="tic1">General Admission</label><br>
+        <input type="radio" id="tic2" name="ticket-type" value="General Admission">
+        <label for="tic2">Reserved Seating</label><br>
+        <input type="radio" id="tic3" name="ticket-type" value="General Admission">
+        <label for="tic3">VIP</label><br><br>
+
+        <a class="button-nav">Find Seats</a>
+        
+
       </section>
 
       <section class="element">
         <h3>Payment Form</h3>
+        
+        <h4>Payment Type</h4>
+        <input type="radio" id="paypal" name="payment-type">
+        <label for="paypal">Paypal</label>
+        <input type="radio" id="paypal" name="payment-type">
+        <label for="paypal">Credit Card</label><br><br>
+
+        <label for="firstname"><em>First Name </em><br></label>
+        <input type="text" id="firstname" name="name"><br>
+        <label for="lastname"><em>Last Name</em><br></label>
+        <input type="text" id="lastname" name="name"><br>
+
+        <label for="email"><em>Email</em></label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="number"><em>Number</em><br></label>
+        <input type="text" id="number" name="number"><br>
+
+        <label for="address1"><em>Address Line</em><br></label>
+        <input type="text" id="address1" name="address"><br>
+        <label for="address2"><em>Address Line (cont.)</em><br></label>
+        <input type="text" id="address2" name="address"><br><br>
+
+        <a class="submit-button">Pay Now</a>
       </section>
 
       <section class="element">
         <h3>Checkout Cart</h3>
+
+        <h3>Your Cart</h3>
+        <img class="mini-img" src="../Assets/Monaco_Circuit.png">
+        <p>2x Monaco Tickets</p>
+        <h4>Subtotal - $399.99</h4>
+        <h4>Tax - $48.00</h4>
+        <h4>Total - 447.99</h4>
+
+        <a class="button-nav">Checkout</a>
+
       </section>
 
     </section>
@@ -149,11 +270,17 @@
 
 
     <section id="citations">
-      <h2>Citations</h2>
+      <h2>Citations and Sources</h2>
 
       <ul>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+        <li>Titillium font from google fonts. Retrieved from <a href="https://fonts.google.com/specimen/Titillium+Web#styles">URL</a> </li>
+        <li>Google API tutorial <a href="https://developers.google.com/fonts/docs/css2>">URL</a></li>
+        <li>W3Schools. CSS shapes <a href="  https://www.w3schools.com/howto/howto_css_shapes.asp">URL</a></li>
+        <li>W3Schools. CSS Links <a href="  https://www.w3schools.com/css/css_link.asp">URL</a></li>
+        <li>W3Schools. HTML Forms <a href="https://www.w3schools.com/html/html_form_input_types.asp">URL</a></li>
+        <li>lipsum. Lorem Ipsum generator used for paragraphs <a href="https://www.lipsum.com/feed/html">URL</a></li>
+        <li>W3Schools. HTML ordered lists<a href="https://www.w3schools.com/html/html_lists_ordered.asp"> URL</a></li>
+        <li>Formula 1. Monaco Circuit track map. Retrieved from <a href="https://www.formula1.com/en/information.monaco-circuit-de-monaco-monte-carlo.2ZWRtIcSI6ZzVGX1uGRpkJ.html">URL</a></li>
       </ul>
 
     </section>
@@ -168,6 +295,13 @@
 
 Fonts {
   https://fonts.google.com/specimen/Titillium+Web#styles
+  https://developers.google.com/fonts/docs/css2
+  https://www.w3schools.com/howto/howto_css_shapes.asp
+  https://www.w3schools.com/css/css_link.asp
+  https://www.w3schools.com/html/html_form_input_types.asp
+  https://www.lipsum.com/feed/html
+  https://www.w3schools.com/html/html_lists_ordered.asp
+  https://www.formula1.com/en/information.monaco-circuit-de-monaco-monte-carlo.2ZWRtIcSI6ZzVGX1uGRpkJ.html
 }
 
 HTML{
