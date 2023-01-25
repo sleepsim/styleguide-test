@@ -27,14 +27,14 @@
 
     <header>
       <h1>P01 - Style Guide - Grand Tix</h1>
-
+      <h2>Chapters</h2>
       <nav>        
         <!-- Add boxes to these -->
-        <a class="button-nav" href="#brand_identity">Brand Identity</a>
-        <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
-        <a class="button-nav" href="#text_elements">Text Elements</a>
-        <a class="button-nav" href="#combined_elements">Combined Elements</a>
-        <a class="button-nav" href="#product-listing">Product Listing Template</a>
+        <a class="button-nav" href="#brand_identity">Brand Identity</a><br>
+        <a class="button-nav" href="#interactive_elements">Interactive Elements</a><br>
+        <a class="button-nav" href="#text_elements">Text Elements</a><br>
+        <a class="button-nav" href="#combined_elements">Combined Elements</a><br>
+        <a class="button-nav" href="#product-listing">Product Listing Template</a><br>
         <a class="button-nav" href="#citations">Citations</a>
       </nav>
 
@@ -48,18 +48,21 @@
       <p>Due to the current culture of ticket re-selling, finding tickets at retail price has been getting harder and harder. GrandTix is a service aimed to help users purchase retail priced tickets for Motorsports events with a focus on Formula 1.</p>
       <p>To help combat re-selling of tickets, GrandTix will limit purchases to one per user and require I.D.s, additionally tickets will not be handed out days before the event.</p>
 
+      <!-- Logo -->
       <section class="element">
         <h3>Logo</h3>
         <img src="Assets/Logo_V4.png" alt="GrandTix Logo">
       </section>
 
+      <!-- Font -->
       <section class="element">
         <h3>Font</h3>
         <p>This is the main font GrandTix uses, Titllium web. Titillium Web is an open source font readily available through google fonts</p>
         <p><strong>This is the bolded heavy font used for highlighting important info</strong></p>
         <em>This is what empahiszed text looks like for disclaimers etc.</em>
       </section>
-   
+      
+      <!-- Colors -->
       <section class="element">
         <h3>Colour</h3>
         <div class="square primary-colour font-heavy">RGB(225,0,0)</div>
@@ -78,7 +81,7 @@
     <section id="interactive_elements">
       <h2>I. Interactive Elements</h2>
 
-
+      <!-- In Text link -->
       <section class="element">
         <h3>In-text link</h3>
         <a href="#interactive_elements">This is an in-text link for the website, it uses the secondary colour of GrandTix<br>
@@ -105,6 +108,13 @@
       <!-- Submit/reset -->
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
+        <h4>CSS Selector:</h4>
+        <p>.submit-button</p>
+        <p>.reset-button</p>
+        <h4>Sample Code</h4>
+        <code>&lt; input type="submit" class="submit-button"&gt;</code>
+        <code>&lt; input type="reset" class="reset-button"&gt;</code>
+        <h4>Rendered Element</h4>
         <form>
           <input type="submit" class="submit-button">
           <input type="reset" class="reset-button">
@@ -114,13 +124,30 @@
       <!-- Text input -->
       <section class="element">
         <h3>Text Input Field with Label</h3>
+        <h4>CSS Selector:</h4>
+        <p>.input-text (ADD CLASS FOR THIS)</p>
+        <h4>Sample Code</h4>
+        <code>&lt;label for="email"&gt;Email&lt;br&gt;&lt;/label&gt;</code>
+        <code>&lt;input type="text" id="email-input" name="email-input"&gt;</code> 
+        <h4>Rendered Element</h4>
         <label for="email">Email<br></label>
         <input type="text" id="emailexample" name="emailexample">
       </section>
 
-
+      <!-- Radio Button with label -->
       <section class="element">
         <h3>Radio Button with Label</h3>
+        <h4>CSS Selector:</h4>
+        <p>Placeholder</p>
+        <h4>Sample Code</h4>
+    
+        <code>&lt;label for=&quot;ga&quot;&gt;General Admission&lt;/label&gt;&lt;br&gt;</code>
+        <code>&lt;input type=&quot;radio&quot; id=&quot;reserved-seat&quot; name=&quot;radioexample&quot; value=&quot;Reserved Seating&quot;&gt;</code>
+        <code>&lt;label for=&quot;reserved-seat&quot;&gt;Reserved Seating&lt;/label&gt;&lt;br&gt;</code>
+        <code>&lt;input type=&quot;radio&quot; id=&quot;vip&quot; name=&quot;radioexample&quot; value=&quot;VIP&quot;&gt;</code>
+        <code>&lt;label for=&quot;vip&quot;&gt;VIP&lt;/label&gt;</code>
+
+        <h4>Rendered Element</h4>
         <label>Packages:</label><br>
         <input type="radio" id="ga" name="radioexample" value="General Admission">
         <label for="ga">General Admission</label><br>
@@ -130,9 +157,16 @@
         <label for="vip">VIP</label>
       </section>
 
-
+      <!-- Image as link -->
       <section class="element">
         <h3>Image as a Link</h3>
+        <h4>CSS Selector</h4>
+        <p>placeholder</p>
+        <h4>Sample Code</h4>
+
+        <code>&lt;a href=&quot;https://www.google.ca&quot;&gt;&lt;img src=&quot;Assets/Logo_V4.png&quot; alt=&quot;GrandTix Logo&quot;&gt;&lt;/a&gt;</code>
+
+        <h4>Rendered Element:</h4>
         <a href="https://www.google.ca"><img src="Assets/Logo_V4.png" alt="GrandTix Logo"></a>
         <p><em>This image links to www.google.ca</em></p>        
       </section>
@@ -156,6 +190,7 @@
         <h4>Heading 4</h4>
       </section>
 
+      <!-- Paragraphs -->
       <section class="element">
         <h3>Paragraphs</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget tempus massa, vitae pellentesque sapien. Nullam quis arcu id magna scelerisque aliquet dapibus quis dolor. Duis non neque maximus, viverra tellus ut, ullamcorper quam. Phasellus at suscipit ipsum. Quisque vel tortor consequat, elementum arcu in, semper eros. Nam egestas tincidunt erat, in eleifend felis suscipit sit amet. Suspendisse nulla neque, sagittis sit amet tempor consequat, imperdiet eu nunc.</p>
@@ -164,6 +199,7 @@
         </p>
       </section>
 
+      <!-- Numbered  Lists-->
       <section class="element">
         <h3>Numbered Lists</h3>
         <ol type="I">
@@ -182,7 +218,9 @@
     <section id="combined_elements">
       <h2>III. Combined Elements</h2>
 
+      <!-- Main Navigation combined molecule -->
       <section class="element">
+
         <h3>Main Navigation</h3>
         <p>This is how main Navigation might look like</p>
         <nav>        
@@ -195,6 +233,7 @@
         </nav>
       </section>
 
+      <!-- Product Navigation molecule -->
       <section id="product-listing" class="element">
 
         <h3>Product/Service Listing</h3>
@@ -218,6 +257,7 @@
 
       </section>
 
+      <!-- Payment form molecule -->
       <section class="element">
         <h3>Payment Form</h3>
         
@@ -246,6 +286,7 @@
         <a class="submit-button">Pay Now</a>
       </section>
 
+      <!-- Checkout cart molecule -->
       <section class="element">
         <h3>Checkout Cart</h3>
 
@@ -264,7 +305,7 @@
     <!-- // COMBINED ELEMENTS SECTION -->
 
 
-
+    <!-- Citations -->
     <section id="citations">
       <h2>Citations and Sources</h2>
 

@@ -14,6 +14,8 @@ body {
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
+
+  padding-left: 1rem;
 }
 
 img {
@@ -78,6 +80,7 @@ code {
 a{
   color: rgb(188,0,0);
   text-decoration: none;
+  padding-bottom: 0.5rem;
 }
 a:hover{
   color: black;
