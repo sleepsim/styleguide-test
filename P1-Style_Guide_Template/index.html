@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
 
     <!-- CSS sheet -->
     <link href="css/main.css" rel="stylesheet">
@@ -43,34 +44,52 @@
     <!-- BRAND IDENTITY -->
     <section id="brand_identity">
 
-      <h2>Brand Identity</h2>
+      <h3>Company Profile</h3>
+      
       <p>GrandTix is a ticket selling service specialized in selling tickets for motorsport races.</p>
       <p>Due to the current culture of ticket re-selling, finding tickets at retail price has been getting harder and harder. GrandTix is a service aimed to help users purchase retail priced tickets for Motorsports events with a focus on Formula 1.</p>
+      <h3>Customer Profile</h3>
       <p>To help combat re-selling of tickets, GrandTix will limit purchases to one per user and require I.D.s, additionally tickets will not be handed out days before the event.</p>
+      <p>The target audiennce for GrandTix would be motorsport fans looking to get a ticket for retail price since most events sell out instantly and tickets are re-sold with a markup</p>
 
       <!-- Logo -->
-      <section class="element">
+      <h2>0. Brand Identity</h2>
+      <div class="line-separator"><div class="line-separator-two"></div></div>
+      <!-- <section class="element"> -->
         <h3>Logo</h3>
-        <img src="Assets/Logo_V4.png" alt="GrandTix Logo">
-      </section>
+        <div class="left-padded-small">
+          <img src="Assets/Logo_V4.png" alt="GrandTix Logo"><br>
+          <em>4th iteration of the logo</em>
+          <br><br><br>
+        </div>
+      <!-- </section> -->
 
       <!-- Font -->
       <section class="element">
-        <h3>Font</h3>
-        <p>This is the main font GrandTix uses, Titllium web. Titillium Web is an open source font readily available through google fonts</p>
-        <p><strong>This is the bolded heavy font used for highlighting important info</strong></p>
-        <em>This is what empahiszed text looks like for disclaimers etc.</em>
+        <h3>Main Font - Titillium Web</h3>
+        <div class="left-padded-small">
+          <p>This is the main font GrandTix uses, Titllium web. It will be used for lower headings and most of the body text as well as the font for the buttons and navigations</p>
+          <p><strong>This is the bolded heavy font used for highlighting important info</strong></p>
+          <em>This is what empahiszed text looks like for disclaimers etc.</em>
+        </div>
+
+        <h3>Secondary Font - Exo 2</h3>
+        <div class="left-padded-small">
+          <p><h2>This font is mainly used for Headings or any text that needs emphasis This is what Exo 2 looks like</h2></p>
+        </div>
       </section>
       
       <!-- Colors -->
       <section class="element">
         <h3>Colour</h3>
-        <div class="square primary-colour font-heavy">RGB(225,0,0)</div>
-        <p>This is the primary colour</p>
-        <div class="square secondary-colour font-heavy">RGB(188,0,0)</div>
-        <p>This is the secondary colour</p>
-        <div class="square tertiary-colour font-heavy">RGB(255,0,0)</div>
-        <p>This is the tertiary colour</p>
+        <div class="left-padded-small">
+          <div class="square primary-colour font-heavy">RGB(225,0,0)</div>
+          <p>This is the primary colour - This will be used for any text, buttons to signify interactability and importance as it contrasts well with the white background</p>
+          <div class="square secondary-colour font-heavy">RGB(188,0,0)</div>
+          <p>This is the secondary colour - This colour acts as an accent colour to be used in cases where the primary colour is already in use</p>
+          <div class="square tertiary-colour font-heavy">RGB(255,0,0)</div>
+          <p>This is the tertiary colour - This is the background colour to help contrast the primary colour, also easy to use with the white background</p>
+        </div>
       </section>
 
     </section>
@@ -80,13 +99,20 @@
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
       <h2>I. Interactive Elements</h2>
-
+      <div class="line-separator"><div class="line-separator-two"></div></div>
       <!-- In Text link -->
-      <section class="element">
+      <!-- <section class="element"> -->
         <h3>In-text link</h3>
-        <a href="#interactive_elements">This is an in-text link for the website, it uses the secondary colour of GrandTix<br>
-        The link does not change color when clicked and it changes to black when hovered.</a>
-      </section>
+        <div class="left-padded-small">
+          <h4>HTML Element</h4>
+          <p>&lt;a&gt;&lt;/a&gt;</p>
+          <h4>Sample Code</h4>
+          <code>&lt;a href=&quot;#interactive_elements&quot;&gt;This is an in-text link for the website, it uses the secondary colour of GrandTix&lt;br&gt; The link does not change color when clicked and it changes to black when hovered.&lt;/a&gt;</code>
+          <h4>Rendered Element</h4>
+          <a href="#interactive_elements">This is an in-text link for the website, it uses the secondary colour of GrandTix<br> The link does not change color when clicked and it changes to black when hovered.</a>
+          <p></p>
+        </div>
+      <!-- </section> -->
 
 
       <!-- Default Button styling section -->
@@ -94,81 +120,83 @@
 
         <h3>Navigation Link</h3>
 
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="#interactive_elements">Default Button</a>
+        <div class="left-padded-small">
+          <h4>CSS selector:</h4>
+          <p>.button-nav</p>
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+          <h4>Rendered element:</h4>
+          <a class="button-nav" href="#interactive_elements">Default Button</a>
+        </div>
 
       </section>
 
       <!-- Submit/reset -->
       <section class="element">
         <h3>Submit/Reset Buttons</h3>
-        <h4>CSS Selector:</h4>
-        <p>.submit-button</p>
-        <p>.reset-button</p>
-        <h4>Sample Code</h4>
-        <code>&lt; input type="submit" class="submit-button"&gt;</code>
-        <code>&lt; input type="reset" class="reset-button"&gt;</code>
-        <h4>Rendered Element</h4>
-        <form>
-          <input type="submit" class="submit-button">
-          <input type="reset" class="reset-button">
-        </form>
+
+        <div class="left-padded-small">
+          <h4>CSS Selector:</h4>
+          <p>.submit-button</p>
+          <p>.reset-button</p>
+          <h4>Sample Code</h4>
+          <code>&lt; input type="submit" class="submit-button"&gt;</code>
+          <code>&lt; input type="reset" class="reset-button"&gt;</code>
+          <h4>Rendered Element</h4>
+          <form>
+            <input type="submit" class="submit-button">
+            <input type="reset" class="reset-button">
+          </form>
+        </div>
       </section>
 
       <!-- Text input -->
       <section class="element">
         <h3>Text Input Field with Label</h3>
-        <h4>CSS Selector:</h4>
-        <p>.input-text (ADD CLASS FOR THIS)</p>
-        <h4>Sample Code</h4>
-        <code>&lt;label for="email"&gt;Email&lt;br&gt;&lt;/label&gt;</code>
-        <code>&lt;input type="text" id="email-input" name="email-input"&gt;</code> 
-        <h4>Rendered Element</h4>
-        <label for="email">Email<br></label>
-        <input type="text" id="emailexample" name="emailexample">
+
+        <div class="left-padded-small">
+          <h4>CSS Selector:</h4>
+          <p>.input-text</p>
+          <h4>Sample Code</h4>
+          <code>&lt;label for="email"&gt;Email&lt;br&gt;&lt;/label&gt;</code>
+          <code>&lt;input type="text" id="email-input" name="email-input"&gt;</code>
+          <h4>Rendered Element</h4>
+          <label for="email">Email<br></label>
+          <input type="text" id="emailexample" name="emailexample">
+        </div>
       </section>
 
       <!-- Radio Button with label -->
       <section class="element">
         <h3>Radio Button with Label</h3>
-        <h4>CSS Selector:</h4>
-        <p>Placeholder</p>
-        <h4>Sample Code</h4>
-    
-        <code>&lt;label for=&quot;ga&quot;&gt;General Admission&lt;/label&gt;&lt;br&gt;</code>
-        <code>&lt;input type=&quot;radio&quot; id=&quot;reserved-seat&quot; name=&quot;radioexample&quot; value=&quot;Reserved Seating&quot;&gt;</code>
-        <code>&lt;label for=&quot;reserved-seat&quot;&gt;Reserved Seating&lt;/label&gt;&lt;br&gt;</code>
-        <code>&lt;input type=&quot;radio&quot; id=&quot;vip&quot; name=&quot;radioexample&quot; value=&quot;VIP&quot;&gt;</code>
-        <code>&lt;label for=&quot;vip&quot;&gt;VIP&lt;/label&gt;</code>
-
-        <h4>Rendered Element</h4>
-        <label>Packages:</label><br>
-        <input type="radio" id="ga" name="radioexample" value="General Admission">
-        <label for="ga">General Admission</label><br>
-        <input type="radio" id="reserved-seat" name="radioexample" value="Reserved Seating">
-        <label for="reserved-seat">Reserved Seating</label><br>
-        <input type="radio" id="vip" name="radioexample" value="VIP">
-        <label for="vip">VIP</label>
+        <div class="left-padded-small">
+          <h4>Sample Code</h4>
+          <code>&lt;label for=&quot;ga&quot;&gt;General Admission&lt;/label&gt;&lt;br&gt;</code>
+          <code>&lt;input type=&quot;radio&quot; id=&quot;reserved-seat&quot; name=&quot;radioexample&quot; value=&quot;Reserved Seating&quot;&gt;</code>
+          <code>&lt;label for=&quot;reserved-seat&quot;&gt;Reserved Seating&lt;/label&gt;&lt;br&gt;</code>
+          <code>&lt;input type=&quot;radio&quot; id=&quot;vip&quot; name=&quot;radioexample&quot; value=&quot;VIP&quot;&gt;</code>
+          <code>&lt;label for=&quot;vip&quot;&gt;VIP&lt;/label&gt;</code>
+          <h4>Rendered Element</h4>
+          <label>Packages:</label><br>
+          <input type="radio" id="ga" name="radioexample" value="General Admission">
+          <label for="ga">General Admission</label><br>
+          <input type="radio" id="reserved-seat" name="radioexample" value="Reserved Seating">
+          <label for="reserved-seat">Reserved Seating</label><br>
+          <input type="radio" id="vip" name="radioexample" value="VIP">
+          <label for="vip">VIP</label>
+        </div>
       </section>
 
       <!-- Image as link -->
       <section class="element">
         <h3>Image as a Link</h3>
-        <h4>CSS Selector</h4>
-        <p>placeholder</p>
-        <h4>Sample Code</h4>
-
-        <code>&lt;a href=&quot;https://www.google.ca&quot;&gt;&lt;img src=&quot;Assets/Logo_V4.png&quot; alt=&quot;GrandTix Logo&quot;&gt;&lt;/a&gt;</code>
-
-        <h4>Rendered Element:</h4>
-        <a href="https://www.google.ca"><img src="Assets/Logo_V4.png" alt="GrandTix Logo"></a>
-        <p><em>This image links to www.google.ca</em></p>        
+        <div class="left-padded-small">
+          <h4>Sample Code</h4>
+          <code>&lt;a href=&quot;https://www.google.ca&quot;&gt;&lt;img src=&quot;Assets/Logo_V4.png&quot; alt=&quot;GrandTix Logo&quot;&gt;&lt;/a&gt;</code>
+          <h4>Rendered Element:</h4>
+          <a href="https://www.google.ca"><img src="Assets/Logo_V4.png" alt="GrandTix Logo"></a>
+          <p><em>This image links to www.google.ca</em></p>
+        </div>        
       </section>
 
 
@@ -180,33 +208,61 @@
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
       <h2>II. Text Elements</h2>
-
-      <section class="element">
+      <div class="line-separator"><div class="line-separator-two"></div></div>
+      <!-- <section class="element"> -->
         <h3>Headings</h3>
-        <p>Four Levels of headings</p>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-      </section>
+        <div class="left-padded-small">
+          <p>There are four Levels of headings that will be used in the website</p>
+          <h4>HTML Element</h4>
+          <p>h1, h2, h3, h4</p>
+          <h4>Sample Code:</h4>
+          <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+          <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+          <h4>Rendered Elements:</h4>
+          <h1>--Heading 1 - Exo 2 Font</h1>
+          <h2>--Heading 2 - Exo 2 Font</h2>
+          <h3>--Heading 3 - Titilium Web Font</h3>
+          <h4>--Heading 4 - Titilium Web Font</h4>
+          <p><br><br></p>
+        </div>
+      <!-- </section> -->
 
       <!-- Paragraphs -->
       <section class="element">
         <h3>Paragraphs</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget tempus massa, vitae pellentesque sapien. Nullam quis arcu id magna scelerisque aliquet dapibus quis dolor. Duis non neque maximus, viverra tellus ut, ullamcorper quam. Phasellus at suscipit ipsum. Quisque vel tortor consequat, elementum arcu in, semper eros. Nam egestas tincidunt erat, in eleifend felis suscipit sit amet. Suspendisse nulla neque, sagittis sit amet tempor consequat, imperdiet eu nunc.</p>
-
-        <p>Donec magna tellus, rhoncus id ornare ut, blandit quis tortor. Suspendisse non condimentum ante, in sodales sem. Duis cursus commodo tellus sit amet elementum. Quisque sagittis lectus ut dolor hendrerit tincidunt. Nullam dignissim, nunc quis mattis egestas, orci nulla aliquet erat, id facilisis neque dui ac elit. Aliquam mi mi, vestibulum id sapien sed, fringilla rhoncus erat. Pellentesque blandit erat rutrum mauris interdum sodales. Phasellus sit amet convallis ex. Sed at ligula lacinia, commodo dui in, dapibus leo. Nulla dictum mauris enim, nec sagittis risus placerat id.
-        </p>
+        <div class="left-padded-small">
+          <h4>HTML element</h4>
+          <p>&lt;p&gt;&lt;/p&gt;</p>
+          <h4>Sample Code</h4>
+          <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget tempus massa, vitae pellentesque sapien. Nullam quis arcu id magna scelerisque aliquet dapibus quis dolor. Duis non neque maximus, viverra tellus ut, ullamcorper quam. Phasellus at suscipit ipsum. Quisque vel tortor consequat, elementum arcu in, semper eros. Nam egestas tincidunt erat, in eleifend felis suscipit sit amet. Suspendisse nulla neque, sagittis sit amet tempor consequat, imperdiet eu nunc.&lt;/p&gt;</code>
+          <h4>Rendered Element:</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget tempus massa, vitae pellentesque sapien. Nullam quis arcu id magna scelerisque aliquet dapibus quis dolor. Duis non neque maximus, viverra tellus ut, ullamcorper quam. Phasellus at suscipit ipsum. Quisque vel tortor consequat, elementum arcu in, semper eros. Nam egestas tincidunt erat, in eleifend felis suscipit sit amet. Suspendisse nulla neque, sagittis sit amet tempor consequat, imperdiet eu nunc.</p>
+          <p>Donec magna tellus, rhoncus id ornare ut, blandit quis tortor. Suspendisse non condimentum ante, in sodales sem. Duis cursus commodo tellus sit amet elementum. Quisque sagittis lectus ut dolor hendrerit tincidunt. Nullam dignissim, nunc quis mattis egestas, orci nulla aliquet erat, id facilisis neque dui ac elit. Aliquam mi mi, vestibulum id sapien sed, fringilla rhoncus erat. Pellentesque blandit erat rutrum mauris interdum sodales. Phasellus sit amet convallis ex. Sed at ligula lacinia, commodo dui in, dapibus leo. Nulla dictum mauris enim, nec sagittis risus placerat id.
+          </p>
+        </div>
       </section>
 
       <!-- Numbered  Lists-->
       <section class="element">
         <h3>Numbered Lists</h3>
-        <ol type="I">
-          <li>First Item</li>
-          <li>Second Item</li>
-          <li>Third Item</li>
-        </ol>
+        <div class="left-padded-small">
+          <h4>HTML element</h4>
+          <p>&lt;ol&gt;<br>&lt;li&gt;&lt;/li&gt;<br>&lt;/ol&gt;</p>
+          <h4>Sample Code</h4>
+          <code>&lt;ol type=&quot;I&quot;&gt;<br>
+            &lt;li&gt;First Item&lt;/li&gt; <br>
+            &lt;li&gt;Second Item&lt;/li&gt; <br>
+            &lt;li&gt;Third Item&lt;/li&gt; <br>
+          &lt;/ol&gt;</code>
+          <h4>Rendered Element:</h4>
+          <ol type="I">
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+          </ol>
+        </div>
       </section>
 
     </section>
@@ -217,43 +273,84 @@
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
       <h2>III. Combined Elements</h2>
-
+      <div class="line-separator"><div class="line-separator-two"></div></div>
       <!-- Main Navigation combined molecule -->
-      <section class="element">
-
         <h3>Main Navigation</h3>
-        <p>This is how main Navigation might look like</p>
-        <nav>        
-          <!-- Add boxes to these -->
-          <a class="button-nav" href="#combined_elements">Main</a>
-          <a class="button-nav" href="#combined_elements">Tickets</a>
-          <a class="button-nav" href="#combined_elements">Schedule</a>
-          <a class="button-nav" href="#combined_elements">About Us</a>
-          <a class="button-nav" href="#combined_elements">Contact</a>
-        </nav>
-      </section>
+        <div class="left-padded-small">
+          <p>This is how main Navigation might look like </p>
+          <h4>Sample Code</h4>
+          <code>
+            &lt;nav&gt;<br>
+            &lt;a class=&quot;button-nav&quot; href=&quot;#combined_elements&quot;&gt;Main&lt;/a&gt; <br>
+            &lt;a class=&quot;button-nav&quot; href=&quot;#combined_elements&quot;&gt;Tickets&lt;/a&gt; <br>
+            &lt;a class=&quot;button-nav&quot; href=&quot;#combined_elements&quot;&gt;Schedule&lt;/a&gt; <br>
+            &lt;a class=&quot;button-nav&quot; href=&quot;#combined_elements&quot;&gt;About Us&lt;/a&gt; <br>
+            &lt;a class=&quot;button-nav&quot; href=&quot;#combined_elements&quot;&gt;Contact&lt;/a&gt; <br>
+            &lt;input type=&quot;text&quot; id=&quot;search-example&quot; name=&quot;search-example&quot; class=&quot;input-search&quot;&gt;<br>
+            &lt;a class=&quot;button-type2&quot;&gt;Search&lt;/a&gt;<br>
+          &lt;/nav&gt;
+                </code>
+          
+                <h4>Sample Rendered Element</h4>
+          <nav>
+            <a class="button-nav" href="#combined_elements">Main</a>
+            <a class="button-nav" href="#combined_elements">Tickets</a>
+            <a class="button-nav" href="#combined_elements">Schedule</a>
+            <a class="button-nav" href="#combined_elements">About Us</a>
+            <a class="button-nav" href="#combined_elements">Contact</a>
+            <input type="text" id="search-example" name="search-example" class="input-search">
+            <a class="button-type2">Search</a>
+          </nav>
+
+          <p><br><br></p>
+        </div>
 
       <!-- Product Navigation molecule -->
       <section id="product-listing" class="element">
 
         <h3>Product/Service Listing</h3>
-        <h2>Monaco Circuit Tickets</h2>
-        <img src="Assets/Monaco_Circuit.png" alt="Monaco Street Circuit map"><br>
-        <h3>Choose Location</h3>
-        <input type="radio" id="sec1" name="sector" value="General Admission">
-        <label for="sec1">Sector 1</label>
-        <input type="radio" id="sec2" name="sector" value="General Admission">
-        <label for="sec2">Sector 2</label>
-        <input type="radio" id="sec3" name="sector" value="General Admission">
-        <label for="sec3">Sector 3</label>
-        <h3>Choose Ticket Type</h3>
-        <input type="radio" id="tic1" name="ticket-type" value="General Admission">
-        <label for="tic1">General Admission</label><br>
-        <input type="radio" id="tic2" name="ticket-type" value="General Admission">
-        <label for="tic2">Reserved Seating</label><br>
-        <input type="radio" id="tic3" name="ticket-type" value="General Admission">
-        <label for="tic3">VIP</label><br><br>
-        <a class="button-nav">Find Seats</a>
+        <div class="left-padded-small">
+          <h4>Sample Code</h4>
+          <code>
+            &lt;h2&gt;Monaco Circuit Tickets&lt;/h2&gt; <br>
+            &lt;img src=&quot;Assets/Monaco_Circuit.png&quot; alt=&quot;Monaco Street Circuit map&quot;&gt;&lt;br&gt;<br><br>
+            &lt;h3&gt;Choose Location&lt;/h3&gt;<br>
+            &lt;input type=&quot;radio&quot; id=&quot;sec1&quot; name=&quot;sector&quot; value=&quot;General Admission&quot;&gt;<br>
+            &lt;label for=&quot;sec1&quot;&gt;Sector 1&lt;/label&gt;<br>
+            &lt;input type=&quot;radio&quot; id=&quot;sec2&quot; name=&quot;sector&quot; value=&quot;General Admission&quot;&gt;<br>
+            &lt;label for=&quot;sec2&quot;&gt;Sector 2&lt;/label&gt;<br>
+            &lt;input type=&quot;radio&quot; id=&quot;sec3&quot; name=&quot;sector&quot; value=&quot;General Admission&quot;&gt;<br>
+            &lt;label for=&quot;sec3&quot;&gt;Sector 3&lt;/label&gt;<br><br>
+            &lt;h3&gt;Choose Ticket Type&lt;/h3&gt;<br>
+            &lt;input type=&quot;radio&quot; id=&quot;tic1&quot; name=&quot;ticket-type&quot; value=&quot;General Admission&quot;&gt;<br>
+            &lt;label for=&quot;tic1&quot;&gt;General Admission&lt;/label&gt;&lt;br&gt;<br>
+            &lt;input type=&quot;radio&quot; id=&quot;tic2&quot; name=&quot;ticket-type&quot; value=&quot;General Admission&quot;&gt;<br>
+            &lt;label for=&quot;tic2&quot;&gt;Reserved Seating&lt;/label&gt;&lt;br&gt;<br>
+            &lt;input type=&quot;radio&quot; id=&quot;tic3&quot; name=&quot;ticket-type&quot; value=&quot;General Admission&quot;&gt;<br>
+            &lt;label for=&quot;tic3&quot;&gt;VIP&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br><br>
+            &lt;a class=&quot;button-nav&quot;&gt;Find Seats&lt;/a&gt;<br>
+            &lt;a href=&quot;&quot;&gt;Check Availability&lt;/a&gt;<br>
+          </code>
+          <h4>Rendered Element</h4>
+          <h2>Monaco Circuit Tickets</h2>
+          <img src="Assets/Monaco_Circuit.png" alt="Monaco Street Circuit map"><br>
+          <h3>Choose Location</h3>
+          <input type="radio" id="sec1" name="sector" value="General Admission">
+          <label for="sec1">Sector 1</label>
+          <input type="radio" id="sec2" name="sector" value="General Admission">
+          <label for="sec2">Sector 2</label>
+          <input type="radio" id="sec3" name="sector" value="General Admission">
+          <label for="sec3">Sector 3</label>
+          <h3>Choose Ticket Type</h3>
+          <input type="radio" id="tic1" name="ticket-type" value="General Admission">
+          <label for="tic1">General Admission</label><br>
+          <input type="radio" id="tic2" name="ticket-type" value="General Admission">
+          <label for="tic2">Reserved Seating</label><br>
+          <input type="radio" id="tic3" name="ticket-type" value="General Admission">
+          <label for="tic3">VIP</label><br><br>
+          <a class="button-nav">Find Seats</a>
+          <a href="">Check Availability</a>
+        </div>
 
       </section>
 
@@ -261,43 +358,72 @@
       <section class="element">
         <h3>Payment Form</h3>
         
-        <h4>Payment Type</h4>
-        <input type="radio" id="paypal" name="payment-type">
-        <label for="paypal">Paypal</label>
-        <input type="radio" id="creditcard" name="payment-type">
-        <label for="creditcard">Credit Card</label><br><br>
+        <div class="left-padded-small">
+          <h3>Sample Code</h3>
+          <code>&lt;h4&gt;Payment Type&lt;/h4&gt;<br>
+            &lt;input type=&quot;radio&quot; id=&quot;paypal&quot; name=&quot;payment-type&quot;&gt;<br>
+            &lt;label for=&quot;paypal&quot;&gt;Paypal&lt;/label&gt;<br>
+            &lt;input type=&quot;radio&quot; id=&quot;creditcard&quot; name=&quot;payment-type&quot;&gt;<br>
+            &lt;label for=&quot;creditcard&quot;&gt;Credit Card&lt;/label&gt;&lt;br&gt;&lt;br&gt;<br>
+            &lt;label for=&quot;firstname&quot;&gt;&lt;em&gt;First Name &lt;/em&gt;&lt;br&gt;&lt;/label&gt;<br>
+            &lt;input type=&quot;text&quot; id=&quot;firstname&quot; name=&quot;name&quot;&gt;&lt;br&gt;<br>
+            &lt;label for=&quot;lastname&quot;&gt;&lt;em&gt;Last Name&lt;/em&gt;&lt;br&gt;&lt;/label&gt;<br>
+            &lt;input type=&quot;text&quot; id=&quot;lastname&quot; name=&quot;name&quot;&gt;&lt;br&gt;<br>
+            &lt;label for=&quot;email&quot;&gt;&lt;em&gt;Email&lt;/em&gt;&lt;/label&gt;&lt;br&gt;<br>
+            &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot;&gt;&lt;br&gt;<br>
+            &lt;label for=&quot;number&quot;&gt;&lt;em&gt;Number&lt;/em&gt;&lt;br&gt;&lt;/label&gt;<br>
+            &lt;input type=&quot;text&quot; id=&quot;number&quot; name=&quot;number&quot;&gt;&lt;br&gt;<br>
+            &lt;label for=&quot;address1&quot;&gt;&lt;em&gt;Address Line&lt;/em&gt;&lt;br&gt;&lt;/label&gt;<br>
+            &lt;input type=&quot;text&quot; id=&quot;address1&quot; name=&quot;address&quot;&gt;&lt;br&gt;<br>
+            &lt;label for=&quot;address2&quot;&gt;&lt;em&gt;Address Line (cont.)&lt;/em&gt;&lt;br&gt;&lt;/label&gt;<br>
+            &lt;input type=&quot;text&quot; id=&quot;address2&quot; name=&quot;address&quot;&gt;&lt;br&gt;&lt;br&gt;<br>
+            &lt;a class=&quot;submit-button&quot;&gt;Pay Now&lt;/a&gt;
+          </code>
+          
+          <h4>Payment Type</h4>
+          <input type="radio" id="paypal" name="payment-type">
+          <label for="paypal">Paypal</label>
+          <input type="radio" id="creditcard" name="payment-type">
+          <label for="creditcard">Credit Card</label><br><br>
+          <label for="firstname"><em>First Name </em><br></label>
+          <input type="text" id="firstname" name="name"><br>
+          <label for="lastname"><em>Last Name</em><br></label>
+          <input type="text" id="lastname" name="name"><br>
+          <label for="email"><em>Email</em></label><br>
+          <input type="email" id="email" name="email"><br>
+          <label for="number"><em>Number</em><br></label>
+          <input type="text" id="number" name="number"><br>
+          <label for="address1"><em>Address Line</em><br></label>
+          <input type="text" id="address1" name="address"><br>
+          <label for="address2"><em>Address Line (cont.)</em><br></label>
+          <input type="text" id="address2" name="address"><br><br>
+          <a class="submit-button">Pay Now</a>
+        </section>
+          
+          <!-- Checkout cart molecule -->
+        <section class="element">
+          <h3>Checkout Cart</h3>
+  
+          <div class="left-padded-small">
+            <h3>Sample Code</h3>
+            <code>&lt;h3&gt;Your Cart&lt;/h3&gt;<br>
+              &lt;img class=&quot;mini-img&quot; src=&quot;Assets/Monaco_Circuit.png&quot; alt=&quot;Monaco Street Cicruit map&quot;&gt;<br>
+              &lt;p&gt;2x Monaco Tickets&lt;/p&gt;<br>
+              &lt;h4&gt;Subtotal - $399.99&lt;/h4&gt;<br>
+              &lt;h4&gt;Tax - $48.00&lt;/h4&gt;<br>
+              &lt;h4&gt;Total - 447.99&lt;/h4&gt;&lt;br&gt;<br>
+              &lt;a class=&quot;button-nav&quot;&gt;Checkout&lt;/a&gt;
+            </code>
 
-        <label for="firstname"><em>First Name </em><br></label>
-        <input type="text" id="firstname" name="name"><br>
-        <label for="lastname"><em>Last Name</em><br></label>
-        <input type="text" id="lastname" name="name"><br>
-
-        <label for="email"><em>Email</em></label><br>
-        <input type="email" id="email" name="email"><br>
-
-        <label for="number"><em>Number</em><br></label>
-        <input type="text" id="number" name="number"><br>
-
-        <label for="address1"><em>Address Line</em><br></label>
-        <input type="text" id="address1" name="address"><br>
-        <label for="address2"><em>Address Line (cont.)</em><br></label>
-        <input type="text" id="address2" name="address"><br><br>
-
-        <a class="submit-button">Pay Now</a>
-      </section>
-
-      <!-- Checkout cart molecule -->
-      <section class="element">
-        <h3>Checkout Cart</h3>
-
-        <h3>Your Cart</h3>
-        <img class="mini-img" src="Assets/Monaco_Circuit.png" alt="Monaco Street Cicruit map">
-        <p>2x Monaco Tickets</p>
-        <h4>Subtotal - $399.99</h4>
-        <h4>Tax - $48.00</h4>
-        <h4>Total - 447.99</h4><br>
-
-        <a class="button-nav">Checkout</a>
+            <h3>Your Cart</h3>
+            <img class="mini-img" src="Assets/Monaco_Circuit.png" alt="Monaco Street Cicruit map">
+            <p>2x Monaco Tickets</p>
+            <h4>Subtotal - $399.99</h4>
+            <h4>Tax - $48.00</h4>
+            <h4>Total - 447.99</h4><br>
+            <a class="button-nav">Checkout</a>
+          </div>
+        </div>
 
       </section>
 
@@ -307,18 +433,19 @@
 
     <!-- Citations -->
     <section id="citations">
-      <h2>Citations and Sources</h2>
-
-      <ul>
-        <li>Titillium font from google fonts. Retrieved from <a href="https://fonts.google.com/specimen/Titillium+Web#styles">URL</a> </li>
-        <li>Google API tutorial <a href="https://developers.google.com/fonts/docs/css2">URL</a></li>
-        <li>W3Schools. CSS shapes <a href="  https://www.w3schools.com/howto/howto_css_shapes.asp">URL</a></li>
-        <li>W3Schools. CSS Links <a href="  https://www.w3schools.com/css/css_link.asp">URL</a></li>
-        <li>W3Schools. HTML Forms <a href="https://www.w3schools.com/html/html_form_input_types.asp">URL</a></li>
-        <li>lipsum. Lorem Ipsum generator used for paragraphs <a href="https://www.lipsum.com/feed/html">URL</a></li>
-        <li>W3Schools. HTML ordered lists<a href="https://www.w3schools.com/html/html_lists_ordered.asp"> URL</a></li>
-        <li>Formula 1. Monaco Circuit track map. Retrieved from <a href="https://www.formula1.com/en/information.monaco-circuit-de-monaco-monte-carlo.2ZWRtIcSI6ZzVGX1uGRpkJ.html">URL</a></li>
-      </ul>
+      <section class="element">
+        <h2>Citations and Sources</h2>
+        <ul>
+          <li>Titillium font from google fonts. Retrieved from <a href="https://fonts.google.com/specimen/Titillium+Web#styles">URL</a> </li>
+          <li>Google API tutorial <a href="https://developers.google.com/fonts/docs/css2">URL</a></li>
+          <li>W3Schools. CSS shapes <a href="  https://www.w3schools.com/howto/howto_css_shapes.asp">URL</a></li>
+          <li>W3Schools. CSS Links <a href="  https://www.w3schools.com/css/css_link.asp">URL</a></li>
+          <li>W3Schools. HTML Forms <a href="https://www.w3schools.com/html/html_form_input_types.asp">URL</a></li>
+          <li>lipsum. Lorem Ipsum generator used for paragraphs <a href="https://www.lipsum.com/feed/html">URL</a></li>
+          <li>W3Schools. HTML ordered lists<a href="https://www.w3schools.com/html/html_lists_ordered.asp"> URL</a></li>
+          <li>Formula 1. Monaco Circuit track map. Retrieved from <a href="https://www.formula1.com/en/information.monaco-circuit-de-monaco-monte-carlo.2ZWRtIcSI6ZzVGX1uGRpkJ.html">URL</a></li>
+        </ul>
+      </section>
 
     </section>
 
