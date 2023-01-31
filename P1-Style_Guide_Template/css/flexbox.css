@@ -2,13 +2,48 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.flex-desc{
+    flex: 1;
+}
+
+.flex-render{
+    flex: 1;
+    /* border-left: 0.1rem solid black; */
+}
+
+.border-length-main{
+    padding-left: 0;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+
+.border-length-half{
+    position: absolute;
+    border-left: 5rem solid black;
+    top: 50%;
+    bottom: 0;
+}
+
+.tester1{
+    position: relative;
+    border-top: 2px black solid;
 
 }
 
-.flex-item{
-    flex-grow: 1;
+.tester1::after{
+    content: "";
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 0.5rem;
 }
+
 
 
 /* Flex container
