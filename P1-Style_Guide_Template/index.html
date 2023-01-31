@@ -18,7 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
 
     <!-- CSS sheet -->
+    <script src="js/scripts.js"></script>
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
 
   </head>
 
@@ -29,7 +31,8 @@
     <header>
       <div class="sidebar">
         <h2>Chapters</h2>
-        <a href="#brand_identity">Brand Identity</a>
+        <button type="button" onclick="tester()">Set background color</button>
+        <a href="#brand_identity" id="nav1" onclick="tester()">Brand Identity</a>
         <a href="#interactive_elements">Interactive Elements</a>
         <a href="#text_elements">Text Elements</a>
         <a href="#combined_elements">Combined Elements</a>
@@ -92,19 +95,27 @@
       <section id="interactive_elements">
         <h2>I. Interactive Elements</h2>
         <div class="line-separator"><div class="line-separator-two"></div></div>
+
         <!-- In Text link -->
-        <!-- <section class="element"> -->
           <h3>In-text link</h3>
           <div class="left-padded-small">
-            <h4>HTML Element</h4>
-            <p>&lt;a&gt;&lt;/a&gt;</p>
-            <h4>Sample Code</h4>
-            <code>&lt;a href=&quot;#interactive_elements&quot;&gt;This is an in-text link for the website, it uses the secondary colour of GrandTix&lt;br&gt; The link does not change color when clicked and it changes to black when hovered.&lt;/a&gt;</code>
-            <h4>Rendered Element</h4>
-            <a href="#interactive_elements">This is an in-text link for the website, it uses the secondary colour of GrandTix<br> The link does not change color when clicked and it changes to black when hovered.</a>
-            <p></p>
+            <div class="flex-container">
+              <div class="flex-item">
+                <h4>HTML Element</h4>
+                <p>&lt;a&gt;&lt;/a&gt;</p>
+                <h4>Sample Code</h4>
+                <code>&lt;a href=&quot;#interactive_elements&quot;&gt;This is an in-text link for the website, it uses the secondary colour of GrandTix&lt;br&gt; The link does not change color when clicked and it changes to black when hovered.&lt;/a&gt;</code>
+              </div>
+
+              <div class="flex-item">
+                <h4>Rendered Element</h4>
+                <a href="#interactive_elements">This is an in-text link for the website, it uses the secondary colour of GrandTix<br> The link does not change color when clicked and it changes to black when hovered.</a>
+                <p></p>
+              </div>
+            </div>
           </div>
-        <!-- </section> -->
+
+
         <!-- Default Button styling section -->
         <section class="element">
           <h3>Navigation Link</h3>
@@ -117,6 +128,8 @@
             <a class="button-nav" href="#interactive_elements">Default Button</a>
           </div>
         </section>
+
+
         <!-- Submit/reset -->
         <section class="element">
           <h3>Submit/Reset Buttons</h3>
@@ -134,6 +147,8 @@
             </form>
           </div>
         </section>
+
+
         <!-- Text input -->
         <section class="element">
           <h3>Text Input Field with Label</h3>
@@ -148,6 +163,8 @@
             <input type="text" id="emailexample" name="emailexample">
           </div>
         </section>
+
+
         <!-- Radio Button with label -->
         <section class="element">
           <h3>Radio Button with Label</h3>
@@ -168,6 +185,8 @@
             <label for="vip">VIP</label>
           </div>
         </section>
+
+        
         <!-- Image as link -->
         <section class="element">
           <h3>Image as a Link</h3>
