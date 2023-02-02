@@ -32,12 +32,15 @@
       <div class="sidebar">
         <h2>Chapters</h2>
         <button type="button" onclick="tester()">Set background color</button>
-        <a href="#brand_identity" id="nav1" onclick="tester()">Brand Identity</a>
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="#product-listing">Product Listing Template</a>
-        <a href="#citations">Citations</a>
+        <ul class="">
+          <li><a href="#brand_identity" id="nav1" onclick="tester()">Brand Identity</a></li>
+          <li><a href="#interactive_elements">Interactive Elements</a></li>
+          <li><a href="#text_elements">Text Elements</a></li>
+          <li><a href="#combined_elements">Combined Elements</a></li>
+          <li><a href="#product-listing">Product Listing Template</a></li>
+          <li><a href="#citations">Citations</a></li>
+        </ul>
+        
       </div>
     </header>
 
@@ -46,7 +49,7 @@
       <h1>P01 - Style Guide - Grand Tix</h1>
       
 
-      <section id="brand_identity">
+      <section data-section="testds1" id="brand_identity">
         <h3>Company Profile</h3>
         <p>GrandTix is a ticket selling service specialized in selling tickets for motorsport races.</p>
         <p>Due to the current culture of ticket re-selling, finding tickets at retail price has been getting harder and harder. GrandTix is a service aimed to help users purchase retail priced tickets for Motorsports events with a focus on Formula 1.</p>
@@ -95,7 +98,7 @@
       </section>
 
       <!-- INTERACTIVE ELEMENTS SECTION // -->
-      <section id="interactive_elements">
+      <section data-section="testds2" id="interactive_elements">
         <h2>I. Interactive Elements</h2>
         <div class="line-separator"><div class="line-separator-two"></div></div>
 
@@ -142,12 +145,19 @@
         <section class="element">
           <h3>Navigation Link</h3>
           <div class="left-padded-small">
-            <h4>CSS selector:</h4>
-            <p>.button-nav</p>
-            <h4>Sample code:</h4>
-            <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-            <h4>Rendered element:</h4>
-            <a class="button-nav" href="#interactive_elements">Default Button</a>
+            <div class="flex-container">
+              <div class="flex-desc">
+                <h4>CSS selector:</h4>
+                <p>.button-nav</p>
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+              </div>
+
+              <div class="flex-render">
+                <h4>Rendered element:</h4>
+                <a class="button-nav" href="#interactive_elements">Default Button</a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -156,17 +166,24 @@
         <section class="element">
           <h3>Submit/Reset Buttons</h3>
           <div class="left-padded-small">
-            <h4>CSS Selector:</h4>
-            <p>.submit-button</p>
-            <p>.reset-button</p>
-            <h4>Sample Code</h4>
-            <code>&lt; input type="submit" class="submit-button"&gt;</code>
-            <code>&lt; input type="reset" class="reset-button"&gt;</code>
-            <h4>Rendered Element</h4>
-            <form>
-              <input type="submit" class="submit-button">
-              <input type="reset" class="reset-button">
-            </form>
+            <div class="flex-container">
+              <div class="flex-desc">
+                <h4>CSS Selector:</h4>
+                <p>.submit-button</p>
+                <p>.reset-button</p>
+                <h4>Sample Code</h4>
+                <code>&lt; input type="submit" class="submit-button"&gt;</code>
+                <code>&lt; input type="reset" class="reset-button"&gt;</code>
+              </div>
+              
+              <div class="flex-render">
+                <h4>Rendered Element</h4>
+                <form>
+                  <input type="submit" class="submit-button">
+                  <input type="reset" class="reset-button">
+                </form>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -175,14 +192,16 @@
         <section class="element">
           <h3>Text Input Field with Label</h3>
           <div class="left-padded-small">
-            <h4>CSS Selector:</h4>
-            <p>.input-text</p>
-            <h4>Sample Code</h4>
-            <code>&lt;label for="email"&gt;Email&lt;br&gt;&lt;/label&gt;</code>
-            <code>&lt;input type="text" id="email-input" name="email-input"&gt;</code>
-            <h4>Rendered Element</h4>
-            <label for="email">Email<br></label>
-            <input type="text" id="emailexample" name="emailexample">
+            <div class="flex-container">
+              <h4>CSS Selector:</h4>
+              <p>.input-text</p>
+              <h4>Sample Code</h4>
+              <code>&lt;label for="email"&gt;Email&lt;br&gt;&lt;/label&gt;</code>
+              <code>&lt;input type="text" id="email-input" name="email-input"&gt;</code>
+              <h4>Rendered Element</h4>
+              <label for="email">Email<br></label>
+              <input type="text" id="emailexample" name="emailexample">
+            </div>
           </div>
         </section>
 
