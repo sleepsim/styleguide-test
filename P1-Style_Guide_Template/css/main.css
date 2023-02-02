@@ -124,6 +124,8 @@ a:hover{
   color: black;
 }
 
+
+
 input{
   font-family: 'Titillium Web', sans-serif;
 }
@@ -260,7 +262,7 @@ strong{
   border-radius: 1rem 0 0 1rem;
 }
 
-.sidebar a:hover, a:focus{
+.sidebar a:hover, .sidebar a:active{
   background-color: black;
 }
 
