@@ -1,0 +1,59 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.flex-desc{
+    flex: 1;
+}
+
+.flex-render{
+    flex: 1;
+    /* border-left: 0.1rem solid black; */
+}
+
+.border-length-main{
+    padding-left: 0;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+
+.border-length-half{
+    position: absolute;
+    border-left: 5rem solid black;
+    top: 50%;
+    bottom: 0;
+}
+
+.top-border{
+    position: relative;
+    border-left: 0.5rem rgb(225, 0, 0)  solid;
+    border-top: 0.5rem rgb(225, 0, 0)  solid;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    border-radius: 2rem 0 0 0 ;
+}
+
+.bottom-border{
+    position: relative;
+    border-right: 0.3rem black solid;
+    border-bottom: 0.3rem black solid;
+    padding-top: 1.5rem;
+    border-radius: 0 0 2rem 0;
+
+}
+
+.left-border{
+    position: relative;
+    border-left: 0.5rem red solid;
+}
+
+
+/* Flex container
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+*/

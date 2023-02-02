@@ -14,8 +14,7 @@ body {
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
-
-  padding-left: rem;
+  margin-top: 2rem;
 }
 
 .line-separator{
@@ -43,15 +42,8 @@ body {
 
 .left-padded-small{
   padding-top: 0rem;
-  padding-left: 1.5rem;
+  padding-left: 0.5rem;
 }
-
-.left-padded-medium{
-  padding-top: 0rem;
-  /* padding-left: 5rem; */
-  padding-right: 50%;
-}
-
 
 
 img {
@@ -60,7 +52,7 @@ img {
 
 div{
   padding-left: 1rem;
-  padding-top: .5rem;
+
 }
 
 h1{
@@ -68,6 +60,7 @@ h1{
   font-style: italic;
   font-size: 3rem;
   font-weight: 700;
+  margin-top: 0;
 }
 
 h2 {
@@ -82,7 +75,6 @@ h3 {
   font-weight: 700;
   margin-top: 1rem;
   font-size: 1.25rem;
-  padding-bottom: 0.5rem;
 }
 
 .h3-example{
@@ -92,6 +84,7 @@ h3 {
 }
 
 h4 {
+  margin-top: 0;
   margin-bottom: 0.25rem;
 }
 
@@ -129,8 +122,21 @@ a:hover{
   color: black;
 }
 
+
+
 input{
   font-family: 'Titillium Web', sans-serif;
+  accent-color: red;
+}
+
+input:hover, input:focus{
+  background-color: rgb(230,230,230);
+}
+
+
+ul{
+  list-style: none;
+	padding: 0;
 }
 
 
@@ -165,6 +171,7 @@ input{
   transition-property: background-color; 
   transition-duration: 0.5s;
   border-radius: 8%;
+  cursor: pointer;
 }
 .submit-button:hover, .button-nav:focus{
   background-color: rgb(0, 0, 0);
@@ -181,6 +188,7 @@ input{
   transition-property: background-color; 
   transition-duration: 0.5s;
   border-radius: 8%;
+  cursor: pointer;
 }
 
 .reset-button:hover, .reset-button:focus{
@@ -225,14 +233,53 @@ strong{
   padding: 0.5rem;
   border: 0;
   color: white;
-  background-color: rgb(225,0,0);
+  background-color: rgb(188,0,0);
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
   border-radius: 8%;
+  cursor: pointer;
 }
 
 .button-type2:hover, .button-type2:focus{
   background-color: rgb(0, 0, 0);
   color: white;
+}
+
+
+/* Sidebar navigation */
+/* Add media query */
+
+.sidebar{
+  height: 100%;
+  width: 10rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(188,50,50);
+  overflow-x: hidden;
+  filter: drop-shadow(0 0 0.4rem black);
+  padding-top: 2rem;
+}
+
+.sidebar a{
+  padding: 6px 8px 6px 16px;
+  color: white;
+  display: block;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.sidebar a:hover, .sidebar a:active{
+  background-color: black;
+}
+
+.main-body{
+  padding-left: 12rem;
+  padding-right: 5rem;
+}
+
+.navigation-example{
+  background-color: rgb(150, 150, 150);
+  padding: 0.5rem;
 }
