@@ -15,7 +15,7 @@
     /* border-left: 0.1rem solid black; */
 }
 
-/* .border-length-main{
+.border-length-main{
     padding-left: 0;
     position: relative;
     border-bottom: 2px solid black;
@@ -28,22 +28,28 @@
     bottom: 0;
 }
 
-.tester1{
+.top-border{
     position: relative;
-    border-top: 2px black solid;
+    border-left: 0.5rem rgb(225, 0, 0)  solid;
+    border-top: 0.5rem rgb(225, 0, 0)  solid;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    border-radius: 2rem 0 0 0 ;
+}
+
+.bottom-border{
+    position: relative;
+    border-right: 0.3rem black solid;
+    border-bottom: 0.3rem black solid;
+    padding-top: 1.5rem;
+    border-radius: 0 0 2rem 0;
 
 }
 
-.tester1::after{
-    content: "";
-    background: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50%;
-    width: 0.5rem;
+.left-border{
+    position: relative;
+    border-left: 0.5rem red solid;
 }
- */
 
 
 /* Flex container

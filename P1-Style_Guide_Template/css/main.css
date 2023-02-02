@@ -128,11 +128,16 @@ a:hover{
 
 input{
   font-family: 'Titillium Web', sans-serif;
+  accent-color: red;
 }
+
+input:hover, input:focus{
+  background-color: rgb(230,230,230);
+}
+
 
 ul{
   list-style: none;
-	margin: 0;
 	padding: 0;
 }
 
@@ -168,6 +173,7 @@ ul{
   transition-property: background-color; 
   transition-duration: 0.5s;
   border-radius: 8%;
+  cursor: pointer;
 }
 .submit-button:hover, .button-nav:focus{
   background-color: rgb(0, 0, 0);
@@ -184,6 +190,7 @@ ul{
   transition-property: background-color; 
   transition-duration: 0.5s;
   border-radius: 8%;
+  cursor: pointer;
 }
 
 .reset-button:hover, .reset-button:focus{
@@ -228,11 +235,12 @@ strong{
   padding: 0.5rem;
   border: 0;
   color: white;
-  background-color: rgb(225,0,0);
+  background-color: rgb(188,0,0);
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
   border-radius: 8%;
+  cursor: pointer;
 }
 
 .button-type2:hover, .button-type2:focus{
@@ -251,8 +259,10 @@ strong{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(188,0,0);
+  background-color: rgb(188,50,50);
   overflow-x: hidden;
+  filter: drop-shadow(0 0 0.4rem black);
+  padding-top: 2rem;
 }
 
 .sidebar a{
@@ -266,7 +276,12 @@ strong{
   background-color: black;
 }
 
-.mainBody{
+.main-body{
   padding-left: 12rem;
   padding-right: 5rem;
+}
+
+.navigation-example{
+  background-color: rgb(150, 150, 150);
+  padding: 0.5rem;
 }
